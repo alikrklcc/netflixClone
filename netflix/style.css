@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("netflix-background3.jpg");
+    background-color: rgba(0, 0, 0, 0.575);
+    background-blend-mode:multiply;
+    background-repeat:round;
+    background-size: contain;
+    overflow-x: hidden;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    
+}
+
+.content{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentWrapper{
+    margin-bottom: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightHeader{
+    margin-top: 25px;
+    margin-right: 55px;
+}
+
+.rightHeader button{
+    margin-left: 55px;
+    background-color: red;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#turkce{
+   background: transparent;
+   border: 1px solid white;
+}
+
+
+
+.rightHeader button:hover{
+    cursor: pointer;
+}
+
+.yazilar h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.yazilar p{
+    color: white;
+    font-size: 2rem;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form input[type=email]{
+    min-width: 500px;
+    height: 50px;
+    padding:35px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+}
+
+
+#btnSubmit{
+    background-color: red;
+    border: none;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 35px;
+    color: whitesmoke;
+    width: 250px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.split{
+    width: 100%;
+    background-color: wheat;
+    height: 5px;
+    opacity: 0.5;
+}
+
+.content2{
+    background-color: black;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yazilar2{
+    margin-top: 55px;
+}
+
+.content2 h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+.content2 p{
+    margin-top: 20px;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.content2-img{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#mainTv{
+    position: relative;
+    z-index: 2;
+}
+
+#tvBg{
+    position: absolute;
+    right: 90px;
+    top: 100px;
+    z-index: 1;
+}
+
+#cnt4{
+    position: relative;
+    left: 140px;
+}
+#signature{
+    position: absolute;
+    color: wheat;
+    text-shadow: 0px 10px 4px red;
+    bottom: 320px; 
+    left: 200px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.content4Wrapper{
+    margin-top: 55px;
+}
+
+#cnt5{
+    text-align: center;
+}
+
+.kidsWrapper{
+    margin-top: 55px;
+}
+
+.sssWrapper{
+    text-align: center;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#sss{
+    margin-bottom: 35px;
+    
+}
+
+.soruContainer1,.soruContainer2,.soruContainer3{
+ border: 1px solid red;
+ border-radius: 5px;
+ padding: 25px;
+ cursor: pointer;
+ margin-bottom: 40px;
+}
+
+#cevap, #cevap2, #cevap3{
+    display: none;
+}
+
+.footerWrapper{
+    padding: 40px;
+    text-align: center;
+}
+
+
+.footerWrapper ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+
+.footerWrapper li{
+    width: 400px;
+}
+
+
+.footerWrapper ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+
+#footerText{
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+#footerDil{
+    margin-top: 150px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+
+.designer{
+    margin-top: 100px;
+    opacity: 0.4;
+    user-select: none;
+}
+
+.designer p{
+    font-size: 15px;
+}
+
+
+/* MOBILE DESIGN */
+
+@media only screen and (max-width: 768px) {
+
+
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+body{
+    background-repeat: round;
+}
+
+
+.content2{
+ overflow-x: hidden;  
+}
+
+
+    .rightHeader{
+        margin-top: 25px;
+        margin-left: 65px;
+        display: flex;
+    }
+    
+    .rightHeader button{
+        margin-left: 15px;
+        background-color: red;
+        width: 55px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .leftHeader img{
+        width: 150px;
+    }
+
+
+
+    
+    #turkce{
+       background: transparent;
+       border: 1px solid white;
+    }
+    
+    .yazilar{
+        width: 300px;
+        position: relative;
+        left: 15px;
+    }
+
+    .yazilar h1{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .yazilar p{
+        color: white;
+        font-size: 1rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .form{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        position: relative;
+        border: 1px solid white;
+        top: 20px;
+        overflow: auto;
+    }
+    
+    .form input[type=email]{
+        min-width: 50px;
+        height: 50px;
+        padding:15px;
+        font-size: 16px;
+        border-radius: 2px;
+        border: none;
+    }
+    
+    
+    #btnSubmit{
+        background-color: red;
+        border: none;
+        padding: 5px;
+        border-radius: 2px;
+        font-size: 25px;
+        width: 150px;
+        height: 50px;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+
+
+
+/* CONTENT */
+
+.content2{
+    background-color: black;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yazilar2{
+    margin-top: 55px;
+}
+
+.content2 h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 55px;
+}
+.content2 p{
+    margin-top: 20px;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.content2-img{
+    position: relative;
+    margin-bottom: 35px;
+    
+}
+
+#mainTv{
+    position: relative;
+    z-index: 2;
+    width: 400px;
+}
+
+#tvBg{
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    z-index: 1;
+    width: 400px;
+}
+
+
+/*CONTENT 3*/
+
+.content3-img{
+    margin-bottom: 15px;
+}
+
+
+/*CONTENT 4*/
+
+.content4Wrapper{
+    margin-top:5px;
+}
+
+.yazilar4{
+    margin-bottom: 150px;
+}
+
+
+.yazilar4 h2{
+    font-size: 1.7rem;
+}
+
+.yazilar4 p{
+    font-size: 1.5rem;
+    width: 300px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#apple{
+    width: 350px;
+    position: relative;
+    
+}
+
+
+#cnt4{
+    position: relative;
+    left: 10px;
+    bottom: 50px;
+}
+#signature{
+position: absolute;
+top: 70px;
+left: 90px;
+font-size: 13px;
+}
+
+
+
+/* KIDS WRAPPER */
+
+.kidsWrapper{
+    margin-top: 5px;
+}
+
+#kids{
+    width: 400px;
+    margin-top: 80px;
+}
+
+.yazilar5{
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.yazilar5 h2{
+    font-size: 1.5rem;
+}
+.yazilar5 p{
+    font-size: 1.1rem;
+}
+
+
+
+/* SSS */
+
+.sssWrapper{
+    text-align: center;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#sss{
+    margin-bottom: 35px;
+    
+}
+
+
+.soruContainer1,.soruContainer2,.soruContainer3{
+ border: 1px solid red;
+ border-radius: 5px;
+ padding: 5px;
+ cursor: pointer;
+ margin-bottom: 40px;
+ width: 340px;
+ text-align: center;
+ margin-left: 15px;
+}
+#soru, #soru2, #soru3{
+    margin-bottom: 45px;
+}
+
+
+
+
+#cevap, #cevap2, #cevap3{
+    display: none;
+}
+
+
+/* FOOTER */
+
+
+.footerWrapper{
+    padding: 0px;
+    text-align: center;
+}
+
+
+.footerWrapper ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+
+.footerWrapper li{
+    width: 100px;
+}
+
+
+.footerWrapper ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+
+#footerText{
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+#footerDil{
+    margin-top: 150px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+
+.designer{
+    margin-top: 30px;
+    opacity: 0.4;
+    user-select: none;
+}
+
+.designer p{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+}

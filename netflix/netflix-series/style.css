@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+.netflixLogo{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.356);
+    z-index: 99;
+    width: 100%;
+    
+}
+
+.netflixLogo img{
+    float: right;
+}
+
+.banner_video{
+    margin-top: 60px;
+    position: relative;
+    object-fit:fill;
+    height: 550px;
+    width:100%;
+}
+
+
+.banner_h1{
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    font-size: 4rem;
+}
+
+.banner_p{
+    position: absolute;
+    color: white;
+    top: 380px;
+    left: 20px;
+    font-size: 1rem;
+    width: 390px;
+}
+
+#imdb{
+    position: absolute;
+    top:20px;
+    color: wheat;
+    font-size: 20px;
+}
+
+.banner_btn{
+    position: absolute;
+    top: 450px;
+    left: 40px;
+    font-weight: bold;
+}
+
+.banner_play{
+    width: 100px;
+    height: 30px;
+    margin-right: 35px;
+    font-weight: bold;
+    transition: 1s all;
+
+}
+
+.banner_play:hover, .banner_story:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    color: whitesmoke;
+}
+.banner_story{
+    width: 100px;
+    height: 30px;
+    margin-left: 35px;
+    font-weight: lighter;
+    transition: 1s all;
+
+}
+
+
+h2{
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 45px;
+}
+
+.rowPosters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowPoster{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    padding: 5px;
+    margin: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+
+.rowPoster:hover{
+    width: 125%;
+   height: 170px;
+   margin: 15px;
+   border: 2px solid lightblue;
+   border-radius: 15px;
+}
+
+/* MOBILE DESIGN */
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        background-color: black;
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    
+    .banner_video{
+        margin-top: 60px;
+        position: relative;
+        object-fit:fill;
+        height: 300px;
+        width:100%;
+    }
+
+    .netflixLogo{
+        background: rgba(0, 0, 0, 0.356);
+        width: 100%;
+        position: absolute;
+        
+    }
+    
+    .netflixLogo img{
+        float: right;
+        width: 70px;
+    }
+
+
+
+
+    .banner_h1{
+        color: white;
+        position: absolute;
+        top: 230px;
+        left: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .banner_p{
+        position: absolute;
+        color: white;
+        top: 260px;
+        left: 20px;
+        font-size: 0.6rem;
+        width: 200px;
+    }
+    
+    #imdb{
+        position: absolute;
+        top:20px;
+        color: wheat;
+        font-size: 12px;
+    }
+    
+    .banner_btn{
+        position: absolute;
+        top: 270px;
+        left: 200px;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+    
+    .banner_play{
+        width: 40px;
+        height: 25px;
+        margin-right: 10px;
+        margin-left: 25px;
+
+    
+    }
+    .banner_story{
+
+        width: 45px;
+        height: 25px;
+        margin-left: 15px;
+
+}
+
+h2{
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-left: 45px;
+}
+
+
+
+/* ROWS */
+
+
+.rowPosters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+
+}
+
+.rowPoster{
+    width: 100px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px rgba(255, 0, 0, 0.26) solid;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+
+
+
+}
+
